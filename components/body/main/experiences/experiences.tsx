@@ -3,13 +3,13 @@ import Exp from "./exp/exp";
 
 export default function Experience() {
   const onbrane =
-    "Mon rôle consiste à développer une application financière décentralisée EVM, utilisant des primitives cryptographiques telles que les ZKP et le chiffrement homomorphique pour garantir la confidentialité des produits de dette.";
+    "Je développe une application financière décentralisée EVM, utilisant des techniques cryptographiques comme les ZKP et le chiffrement homomorphique pour assurer la confidentialité des produits de dette.";
   const hexalabs =
-    "React.js - Next.js: Ma mission a été de produire des front-end sur-mesure. Solidity: Construire et deployer tout type de projets sur blockchain: Defi, MarketplaceNFT. BackEnd: Monter tout type de backend en SQL et NO-SQL.";
+    "J'ai développé des front-ends avec React.js et Next.js, déployé des projets blockchain en Solidity (DeFi, Marketplace NFT, etc.), et configuré des backends.";
   const toysfilms =
-    "Angular: Ma mission a été de développer des applications grand public à plus de 10.000 utilisateurs pour l'Oreal, Microsoft, Royal Canin,... Javascript - Typescript: Proposer des solutions de metaverse en 3D temps réel sur navigateur.";
-
-  return (
+    "Avec Angular et divers frameworks node.js, j'ai conçu  des solutions innovantes pour des clients majeurs comme L'Oréal, Microsoft et Air liquide.";
+  
+    return (
     <div>
       <h3>Expérience</h3>
       <Divider />

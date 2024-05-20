@@ -4,24 +4,18 @@ export default function Skills() {
   const frontEnd = [
     "JavaScript",
     "TypeScript",
-    "React.js",
-    "Next.js",
+    "React/Next.js",
     "Angular",
     "HTML/CSS",
-    "Node",
-    "Tailwind",
-    "Bootstrap"
+    "Tailwind/Bootstrap",
   ];
 
   const backEnd = [
     "NestJs",
-    "SQL",
-    "ExpressJs",
-    "Sequelize",
-    "TypeORM",
+    "SQL/NOSQL",
+    "Sequelize/TypeORM",
     "GraphQL",
     "Redis",
-    "MongoDB",
     "Docker",
   ];
 
@@ -29,29 +23,27 @@ export default function Skills() {
     "Solidity",
     "Rust",
     "Ethers.js/Wagmi",
-    "Hardaht/Forge",
+    "Hardhat/Forge",
     "Circom",
     "Noir-lang",
   ];
 
   return (
-    <div>
+    <div className="mb-2">
       <h3>Compétences techniques</h3>
       <Divider />
       <h4 className="mb-2">Langages de programmation</h4>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-3">
         <ul>
           {frontEnd.map((skill: string) => (
             <li key={skill}>{skill}</li>
           ))}
         </ul>
-
         <ul>
           {backEnd.map((skill: string) => (
             <li key={skill}>{skill}</li>
           ))}
         </ul>
-
         <ul>
           {blockchain.map((skill: string) => (
             <li key={skill}>{skill}</li>

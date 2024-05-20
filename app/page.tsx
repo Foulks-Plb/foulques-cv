@@ -1,16 +1,15 @@
 import Main from "@/components/body/main/main";
 import Tab from "@/components/body/tab/tab";
-import Header from "@/components/header/header";
 
 export default function Home() {
+
   return (
-    <main >
-      <Header />
-      <div className="flex">
-        <div className="px-4">
-          <Tab />
+    <main className="w-100 foulquesCv" >
+      <div className="flex w-a4 h-a4 m-auto">
+        <div  className="p-4">
+          <Tab  />
         </div>
-        <div className="px-4">
+        <div className="p-4">
           <Main />
         </div>
       </div>

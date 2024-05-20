@@ -3,7 +3,7 @@ import Exp from "../experiences/exp/exp";
 
 export default function Education() {
   const hetic =
-    "Formation axée sur la maîtrise technique des processus de création de contenu 3d temps réel. La formation enseigne les mathématiques appliquées et le développement web.";
+    "Formation axée sur la création de contenu 3D temps réel, couvrant les mathématiques appliquées et le développement web.";
 
   return (
     <div>

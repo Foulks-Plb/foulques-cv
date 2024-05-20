@@ -25,37 +25,48 @@
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--grey1);
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--grey2);
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--grey1);
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--grey1);
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--grey2);
 }
 
 ul {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--grey2);
+}
+
+.h-a4 {
+  overflow: hidden;
+}
+
+.link {
+
+  &:hover {
+    color: var(--blue1);
+  }
 }

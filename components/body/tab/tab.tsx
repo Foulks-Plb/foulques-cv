@@ -1,8 +1,10 @@
+import Picture from "@/components/Header/picture/picture";
 import Card from "./card/card";
 
 export default function Tab() {
   return (
     <div className="grid gap-y-4 max-w-96 min-w-64">
+      <Picture />
       <Card
         title="Profil"
         text={
@@ -10,7 +12,30 @@ export default function Tab() {
         }
       />
       <Card title="Langues" text={"Français, Anglais"} />
-      <Card title="Centres d'intérêt" text={"Technologie et innovation, Blockchain, Finance, Immobilier, Sport"} />
+      <Card
+        title="Centres d'intérêt"
+        text={[
+          { name: "Technologie et innovation" },
+          { name: "Blockchain" },
+          { name: "Finance" },
+          { name: "Immobilier" },
+          { name: "Sport" },
+        ]}
+      />
+      <Card
+        title="Info"
+        text={[
+          { name: "pellabeuf@gmail.com", link: "mailto:pellabeuf@gmail.com" },
+          { name: "Paris, France" },
+          {
+            name: "Linkedin",
+            link: "https://www.linkedin.com/in/foulques-pellabeuf-503837137/",
+          },
+          { name: "Github", link: "https://github.com/Foulks-Plb" },
+          { name: "Medium", link: "https://medium.com/@pellabeuf" },
+          { name: "X", link: "https://x.com/FoulkPlb" },
+        ]}
+      />
     </div>
   );
 }
