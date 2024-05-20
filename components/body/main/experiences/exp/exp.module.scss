@@ -1,0 +1,22 @@
+.company {
+    border-radius: 22px;
+    padding: 4px 18px;
+    border: solid 3px var(--blue1);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey2);
+}
+
+.date {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grey2);
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.dividerLeft {
+    width: 6px;
+    background-color: var(--grey4);
+}

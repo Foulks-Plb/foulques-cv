@@ -3,31 +3,59 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+
+  --grey1: #343434;
+  --grey2: #666666;
+  --grey3: #dddddd;
+  --grey4: #f7f7f7;
+  --grey5: #F3F3F3;
+
+  --blue1: #007fe9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    /* --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--grey1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--grey2);
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--grey1);
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--grey1);
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--grey2);
+}
+
+ul {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--grey2);
 }

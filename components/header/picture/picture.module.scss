@@ -1,0 +1,11 @@
+.circle {
+    min-width: 100px;
+    max-width: 160px;
+    background-color: white;
+    border: 8px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 1/1;
+    margin: auto;
+}
