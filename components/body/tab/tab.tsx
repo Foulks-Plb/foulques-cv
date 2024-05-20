@@ -1,4 +1,4 @@
-import Picture from "@/components/Header/picture/picture";
+import Picture from "@/components/header/picture/picture";
 import Card from "./card/card";
 
 export default function Tab() {
