@@ -12,6 +12,7 @@
   --primary: #007fe9;
 
   --bg: white;
+  --border1: white;
 }
 
 [data-theme='dark'] {
@@ -22,6 +23,7 @@
   --grey5: #343434;
 
   --bg: #1a1a1a;
+  --border1: #343434;
 }
 
 body {

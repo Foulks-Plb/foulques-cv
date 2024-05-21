@@ -13,7 +13,7 @@ export default function Tab() {
       <Card
         title="Profil"
         text={
-          "Fort de 4 - 5 ans d'expérience en développement full stack et blockchain, je suis un développeur passioné et déterminé.  Mon objectif est de continuer à apprendre et à exceller dans le domaine de la blockchain, afin de contribuer activement à cette écosystème en pleine expansion."
+          "Fort de 5 ans d'expérience en développement full stack et blockchain, je suis un développeur passioné et déterminé.  Mon objectif est de continuer à apprendre et à exceller dans le domaine de la blockchain, afin de contribuer activement à cette écosystème en pleine expansion."
         }
       />
       <Card title="Langues" text={"Français, Anglais"} />

@@ -1,14 +1,20 @@
 .circle {
-  border: 8px solid var(--bg);
+  border: 8px solid var(--border1);
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
   aspect-ratio: 1/1;
   margin: 0 auto;
   height: 140px;
-  transition: 0.2s;
+
+  img {
+    transition: 0.2s;
+    cursor: crosshair;
+  }
 
   &:hover {
-    transform: scale(1.02);
+    img {
+      transform: scale(1.1);
+    }
   }
 }
