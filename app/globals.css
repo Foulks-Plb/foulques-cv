@@ -17,7 +17,7 @@
 [data-theme='dark'] {
   --grey1: #F3F3F3;
   --grey2: #f7f7f7;
-  --grey3: #dddddd;
+  --grey3: #666666;
   --grey4: #666666;
   --grey5: #343434;
 
@@ -75,6 +75,8 @@ ul {
 }
 
 .link {
+  display: flex;
+  align-items: center;
 
   &:hover {
     color: var(--primary);

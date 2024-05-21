@@ -9,7 +9,7 @@ export default function Exp(props: any) {
       </div>
       <div className="flex ml-6">
         <div className={style.dividerLeft}></div>
-        <div className="ml-8">
+        <div className="ml-6">
           <h4 className="mb-1 mt-2">{props.title}</h4>
           <p>{props.text}</p>
         </div>

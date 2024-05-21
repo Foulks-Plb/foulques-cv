@@ -14,10 +14,14 @@ export default function Card(props: any) {
             <li key={i}>
               {item.link ? (
                 <Link className="link" href={item.link} target="_blank">
-                  {item.name}
+                  {item.icon}
+                  <div className="ml-2">{item.name}</div>
                 </Link>
               ) : (
-                item.name
+                <div className="flex items-center">
+                  {item.icon}
+                  <div className="ml-2">{item.name}</div>
+                </div>
               )}
             </li>
           ))}

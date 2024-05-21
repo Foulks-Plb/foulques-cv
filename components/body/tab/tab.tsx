@@ -1,5 +1,10 @@
 import Picture from "@/components/header/picture/picture";
 import Card from "./card/card";
+import { IoMdMail } from "react-icons/io";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { BsMedium } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import { MdPlace } from "react-icons/md";
 
 export default function Tab() {
   return (
@@ -25,15 +30,28 @@ export default function Tab() {
       <Card
         title="Info"
         text={[
-          { name: "pellabeuf@gmail.com", link: "mailto:pellabeuf@gmail.com" },
-          { name: "Paris, France" },
+          {
+            name: "pellabeuf@gmail.com",
+            link: "mailto:pellabeuf@gmail.com",
+            icon: <IoMdMail />,
+          },
+          { name: "Paris, France", icon: <MdPlace /> },
           {
             name: "Linkedin",
             link: "https://www.linkedin.com/in/foulques-pellabeuf-503837137/",
+            icon: <FaLinkedin />,
           },
-          { name: "Github", link: "https://github.com/Foulks-Plb" },
-          { name: "Medium", link: "https://medium.com/@pellabeuf" },
-          { name: "X", link: "https://x.com/FoulkPlb" },
+          {
+            name: "Github",
+            link: "https://github.com/Foulks-Plb",
+            icon: <FaGithub />,
+          },
+          {
+            name: "Medium",
+            link: "https://medium.com/@pellabeuf",
+            icon: <BsMedium />,
+          },
+          { name: "X", link: "https://x.com/FoulkPlb", icon: <FaXTwitter /> },
         ]}
       />
     </div>
