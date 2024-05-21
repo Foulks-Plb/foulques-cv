@@ -1,22 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import styles from "./tools.module.scss";
 
 export default function Tools() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   const download = async () => {
     const response = await fetch("/foulques_pellabeuf_cv.pdf");
     const blob = await response.blob();
@@ -47,7 +33,7 @@ export default function Tools() {
           />
           <div className="relative w-11 h-6 bg-white-200 peer-focus:outline-none peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
         </label>
-        {!isMobile && (
+        <div className={styles.download}>
           <button
             onClick={() => download()}
             className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
@@ -61,7 +47,7 @@ export default function Tools() {
             </svg>
             <span>Download</span>
           </button>
-        )}
+        </div>
       </div>
     </>
   );
