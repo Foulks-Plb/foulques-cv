@@ -3,26 +3,36 @@
 @tailwind utilities;
 
 :root {
-  /* --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
-
   --grey1: #343434;
   --grey2: #666666;
   --grey3: #dddddd;
   --grey4: #f7f7f7;
   --grey5: #F3F3F3;
 
-  --blue1: #007fe9;
+  --primary: #007fe9;
+
+  --bg: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0; */
-  }
+[data-theme='dark'] {
+  --grey1: #F3F3F3;
+  --grey2: #f7f7f7;
+  --grey3: #dddddd;
+  --grey4: #666666;
+  --grey5: #343434;
+
+  --bg: #1a1a1a;
 }
+
+body {
+  background-color: var(--bg);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --primary: red
+  }
+} */
 
 h1 {
   font-size: 30px;
@@ -67,6 +77,6 @@ ul {
 .link {
 
   &:hover {
-    color: var(--blue1);
+    color: var(--primary);
   }
 }
