@@ -1,8 +1,12 @@
 "use client";
 
+import { useDictionary } from "@/context-provider/dictionary";
 import styles from "./tools.module.scss";
 
 export default function Tools() {
+
+  const { tools } = useDictionary();
+
   const download = async () => {
     const response = await fetch("/foulques_pellabeuf_cv.pdf");
     const blob = await response.blob();
@@ -45,7 +49,7 @@ export default function Tools() {
             >
               <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
             </svg>
-            <span>Download</span>
+            <span>{tools.btn}</span>
           </button>
         </div>
       </div>

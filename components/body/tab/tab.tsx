@@ -1,58 +1,24 @@
+"use client";
+
 import Picture from "@/components/header/picture/picture";
 import Card from "./card/card";
-import { IoMdMail } from "react-icons/io";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { BsMedium } from "react-icons/bs";
-import { FaXTwitter } from "react-icons/fa6";
-import { MdPlace } from "react-icons/md";
+import { useDictionary } from "@/context-provider/dictionary";
 
 export default function Tab() {
+  const { tab } = useDictionary();
+
   return (
     <div className="grid gap-y-4 max-w-96 min-w-64">
       <Picture />
+      <Card title={tab.profil.title} text={tab.profil.text} />
+      <Card title={tab.lang.title} text={tab.lang.text} />
       <Card
-        title="Profil"
-        text={
-          "Fort de 5 ans d'expérience en développement full stack et blockchain, je suis un développeur passioné et déterminé.  Mon objectif est de continuer à apprendre et à exceller dans le domaine de la blockchain, afin de contribuer activement à cette écosystème en pleine expansion."
-        }
-      />
-      <Card title="Langues" text={"Français, Anglais"} />
-      <Card
-        title="Centres d'intérêt"
-        text={[
-          { name: "Technologie et innovation" },
-          { name: "Blockchain" },
-          { name: "Finance" },
-          { name: "Immobilier" },
-          { name: "Sport" },
-        ]}
+        title={tab.interest.title}
+        text={tab.interest.text}
       />
       <Card
-        title="Info"
-        text={[
-          {
-            name: "pellabeuf@gmail.com",
-            link: "mailto:pellabeuf@gmail.com",
-            icon: <IoMdMail />,
-          },
-          { name: "Paris, France", icon: <MdPlace /> },
-          {
-            name: "Linkedin",
-            link: "https://www.linkedin.com/in/foulques-pellabeuf-503837137/",
-            icon: <FaLinkedin />,
-          },
-          {
-            name: "Github",
-            link: "https://github.com/Foulks-Plb",
-            icon: <FaGithub />,
-          },
-          {
-            name: "Medium",
-            link: "https://medium.com/@pellabeuf",
-            icon: <BsMedium />,
-          },
-          { name: "X", link: "https://x.com/FoulkPlb", icon: <FaXTwitter /> },
-        ]}
+        title={tab.info.title}
+        text={tab.info.text}
       />
     </div>
   );

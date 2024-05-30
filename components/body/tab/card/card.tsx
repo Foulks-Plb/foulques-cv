@@ -1,8 +1,33 @@
 import style from "./card.module.scss";
 import Divider from "../../divider/divider";
 import Link from "next/link";
+import { IoMdMail } from "react-icons/io";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { BsMedium } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
+import { MdPlace } from "react-icons/md";
 
 export default function Card(props: any) {
+
+  function getIcon(name: string) {
+    switch (name) {
+      case "email":
+        return <IoMdMail />;
+      case "linkedin":
+        return <FaLinkedin />;
+      case "github":
+        return <FaGithub />;
+      case "medium":
+        return <BsMedium />;
+      case "twitter":
+        return <FaXTwitter />;
+      case "location":
+        return <MdPlace />;
+      default:
+        return null;
+    }
+  }
+  
   return (
     <div className={style.card}>
       <h4>{props.title}</h4>
@@ -14,12 +39,12 @@ export default function Card(props: any) {
             <li key={i}>
               {item.link ? (
                 <Link className="link" href={item.link} target="_blank">
-                  {item.icon}
+                  {getIcon(item.icon)}
                   <div className="ml-2">{item.name}</div>
                 </Link>
               ) : (
                 <div className="flex items-center">
-                  {item.icon}
+                  {getIcon(item.icon)}
                   <div className="ml-2">{item.name}</div>
                 </div>
               )}

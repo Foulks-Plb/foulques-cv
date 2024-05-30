@@ -1,0 +1,135 @@
+{
+  "header": {
+    "title": "Développeur Full Stack & Blockchain"
+  },
+  "tools": {
+    "btn": "Télécharger"
+  },
+  "tab": {
+    "profil": {
+      "title": "Profil",
+      "text": "Fort de 5 ans d'expérience en développement full stack et blockchain, je suis un développeur passioné et déterminé. Mon objectif est de continuer à apprendre et à exceller dans le domaine de la blockchain, afin de contribuer activement à cette écosystème en pleine expansion."
+    },
+    "lang": {
+      "title": "Langues",
+      "text": "Français, Anglais"
+    },
+    "interest": {
+      "title": "Centres d'intérêt",
+      "text": [
+        {
+          "name": "Technologie et innovation"
+        },
+        {
+          "name": "Blockchain"
+        },
+        {
+          "name": "Finance"
+        },
+        {
+          "name": "Immobilier"
+        },
+        {
+          "name": "Sport"
+        }
+      ]
+    },
+    "info": {
+      "title": "Info",
+      "text": [
+        {
+          "name": "pellabeuf@gmail.com",
+          "link": "mailto:pellabeuf@gmail.com",
+          "icon": "email"
+        },
+        { "name": "Paris, France", "icon": "location" },
+        {
+          "name": "Linkedin",
+          "link": "https://www.linkedin.com/in/foulques-pellabeuf-503837137/",
+          "icon": "linkedin"
+        },
+        {
+          "name": "Github",
+          "link": "https://github.com/Foulks-Plb",
+          "icon": "github"
+        },
+        {
+          "name": "Medium",
+          "link": "https://medium.com/@pellabeuf",
+          "icon": "medium"
+        },
+        {
+          "name": "X",
+          "link": "https://x.com/FoulkPlb",
+          "icon": "twitter"
+        }
+      ]
+    }
+  },
+  "main": {
+    "skills": {
+      "title": "Compétences techniques",
+      "subtitle": "Langages de programmation",
+      "text": [
+        [
+          "JavaScript",
+          "TypeScript",
+          "React/Next.js",
+          "Angular",
+          "HTML/CSS",
+          "Tailwind/Bootstrap"
+        ],
+        [
+          "NestJs",
+          "SQL/NOSQL",
+          "Sequelize/TypeORM",
+          "GraphQL",
+          "Redis",
+          "Docker"
+        ],
+        [
+          "Solidity",
+          "Rust",
+          "Circom",
+          "Noir-lang",
+          "Hardhat/Forge",
+          "Ethers.js/Wagmi"
+        ]
+      ]
+    },
+    "experiences": {
+      "title": "Expériences",
+      "exp": [
+        {
+          "title": "Lead blockchain",
+          "company": "Onbrane",
+          "date": "2023 - Aujourd'hui",
+          "text": "Je développe une application financière décentralisée EVM, utilisant des techniques cryptographiques comme les ZKP et le chiffrement homomorphique pour assurer la confidentialité des produits de dette."
+        },
+        {
+          "title": "Développeur full stack & blockchain",
+          "company": "Hexalabs",
+          "date": "2022 - 2023",
+          "text": "J'ai développé des front-ends avec React.js et Next.js, déployé des projets blockchain en Solidity (DeFi, Marketplace NFT, etc.), et configuré des backends."
+        },
+        {
+          "title": "Développeur full stack",
+          "company": "Toys films",
+          "date": "2020 - 2022",
+          "text": "Avec Angular et divers frameworks node.js, j'ai conçu  des solutions innovantes pour des clients majeurs comme L'Oréal, Microsoft et Air liquide."
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "exp": [
+        {
+          "title": "Bachelor 3d temps réel",
+          "company": "Hetic",
+          "date": "2017 - 2020",
+          "text": "Formation axée sur la création de contenu 3D temps réel, couvrant les mathématiques appliquées et le développement web."
+        }
+      ]
+    }
+  }
+}

@@ -1,54 +1,24 @@
+"use client";
+
+import { useDictionary } from "@/context-provider/dictionary";
 import Divider from "../../divider/divider";
 
 export default function Skills() {
-  const frontEnd = [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js",
-    "Angular",
-    "HTML/CSS",
-    "Tailwind/Bootstrap",
-  ];
-
-  const backEnd = [
-    "NestJs",
-    "SQL/NOSQL",
-    "Sequelize/TypeORM",
-    "GraphQL",
-    "Redis",
-    "Docker",
-  ];
-
-  const blockchain = [
-    "Solidity",
-    "Rust",
-    "Ethers.js/Wagmi",
-    "Hardhat/Forge",
-    "Circom",
-    "Noir-lang",
-  ];
+  const { main } = useDictionary();
 
   return (
     <div className="mb-2">
-      <h3>Compétences techniques</h3>
+      <h3>{main.skills.title}</h3>
       <Divider />
-      <h4 className="mb-2">Langages de programmation</h4>
+      <h4 className="mb-2">{main.skills.subtitle}</h4>
       <div className="grid grid-cols-3">
-        <ul>
-          {frontEnd.map((skill: string) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <ul>
-          {backEnd.map((skill: string) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <ul>
-          {blockchain.map((skill: string) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
+        {main.skills.text.map((text: any[], i: number) => (
+          <ul key={i}>
+            {text.map((item: any, j: number) => (
+              <li key={j}>{item}</li>
+            ))}
+          </ul>
+        ))}
       </div>
     </div>
   );
