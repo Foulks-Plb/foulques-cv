@@ -3,18 +3,19 @@
 import { useDictionary } from "@/context-provider/dictionary";
 import styles from "./tools.module.scss";
 import LangSelector from "./lang-selector/land-selector";
+import { useParams } from "next/navigation";
 
 export default function Tools() {
-
   const { tools } = useDictionary();
+  const { lang } = useParams();
 
   const download = async () => {
-    const response = await fetch("/foulques_pellabeuf_cv.pdf");
+    const response = await fetch("/foulques_pellabeuf_cv_" + lang + ".pdf");
     const blob = await response.blob();
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "foulques_pellabeuf_cv.pdf";
+    a.download = "foulques_pellabeuf_cv_" + lang + ".pdf";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -40,21 +41,20 @@ export default function Tools() {
         </label>
         <LangSelector />
 
-          <button
-            onClick={() => download()}
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+        <button
+          onClick={() => download()}
+          className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
+        >
+          <svg
+            className="fill-current w-4 h-4 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
           >
-            <svg
-              className="fill-current w-4 h-4 mr-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-            </svg>
-            <span>{tools.btn}</span>
-          </button>
-        </div>
-
+            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+          </svg>
+          <span>{tools.btn}</span>
+        </button>
+      </div>
     </div>
   );
 }
