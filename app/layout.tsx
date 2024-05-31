@@ -20,10 +20,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html>
       <Head>
         <title>Foulques Pellabeuf</title>
+        <meta
+          name="description"
+          content="With 5 years of experience in full stack and blockchain development, I am a passionate and determined developer. My goal is to continue learning and excelling in the field of blockchain, in order to actively contribute to this rapidly expanding ecosystem."
+        />
         <meta property="og:title" content="Foulques Pellabeuf" key="title" />
+        <meta
+          property="og:description"
+          content="Full Stack and Blockchain developer"
+        />
+        <link rel="alternate" hrefLang="fr" href="/fr" />
+        <link rel="alternate" hrefLang="en" href="/en" />
       </Head>
       <body className={inter.className}>
         {children}

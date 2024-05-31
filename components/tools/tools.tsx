@@ -2,6 +2,7 @@
 
 import { useDictionary } from "@/context-provider/dictionary";
 import styles from "./tools.module.scss";
+import LangSelector from "./lang-selector/land-selector";
 
 export default function Tools() {
 
@@ -26,7 +27,7 @@ export default function Tools() {
   };
 
   return (
-    <>
+    <div className={styles.tools}>
       <div className="absolute right-0 m-2 inline-flex items-center">
         <label className="inline-flex items-center cursor-pointer mr-4">
           <input
@@ -37,7 +38,8 @@ export default function Tools() {
           />
           <div className="relative w-11 h-6 bg-white-200 peer-focus:outline-none peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
         </label>
-        <div className={styles.download}>
+        <LangSelector />
+
           <button
             onClick={() => download()}
             className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
@@ -52,7 +54,7 @@ export default function Tools() {
             <span>{tools.btn}</span>
           </button>
         </div>
-      </div>
-    </>
+
+    </div>
   );
 }

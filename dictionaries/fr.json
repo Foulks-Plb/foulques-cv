@@ -77,12 +77,15 @@
           "React/Next.js",
           "Angular",
           "HTML/CSS",
-          "Tailwind/Bootstrap"
+          "Tailwind",
+          "Bootstrap"
         ],
         [
           "NestJs",
           "SQL/NOSQL",
-          "Sequelize/TypeORM",
+          "Sequelize",
+          "TypeORM",
+          "Prisma",
           "GraphQL",
           "Redis",
           "Docker"
@@ -93,7 +96,13 @@
           "Circom",
           "Noir-lang",
           "Hardhat/Forge",
-          "Ethers.js/Wagmi"
+          "Ethers.js/Wagmi",
+          "Subgraph"
+        ],
+        [
+          "Grafana",
+          "Elasticsearch",
+          "AWS"
         ]
       ]
     },
