@@ -7,9 +7,8 @@ export default function Exp(props: any) {
         <div className={style.company}>{props.company}</div>
         <div className={style.date}>{props.date}</div>
       </div>
-      <div className="flex ml-6">
-        <div className={style.dividerLeft}></div>
-        <div className="ml-6">
+      <div className="flex">
+        <div className="ml-4">
           <h4 className="mb-1 mt-2">{props.title}</h4>
           <p className={style.text} dangerouslySetInnerHTML={{ __html: props.text }}></p>
         </div>
