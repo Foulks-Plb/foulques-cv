@@ -1,9 +1,9 @@
 .company {
   border-radius: 22px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 14px;
+  padding-right: 14px;
   border: solid 2px var(--primary);
   font-size: 16px;
   font-weight: 500;
@@ -27,4 +27,8 @@
 .dividerLeft {
   width: 6px;
   background-color: var(--grey4);
+}
+
+.text {
+  font-size: 12px;
 }

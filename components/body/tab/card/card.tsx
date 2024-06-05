@@ -6,10 +6,11 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { BsMedium } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdPlace } from "react-icons/md";
+import { ReactElement } from "react";
 
 export default function Card(props: any) {
 
-  function getIcon(name: string) {
+  function getIcon(name: string): ReactElement {
     switch (name) {
       case "email":
         return <IoMdMail />;
@@ -24,7 +25,7 @@ export default function Card(props: any) {
       case "location":
         return <MdPlace />;
       default:
-        return null;
+        return <></>;
     }
   }
   
@@ -32,7 +33,7 @@ export default function Card(props: any) {
     <div className={style.card}>
       <h4>{props.title}</h4>
       <Divider />
-      {typeof props.text === "string" && <p>{props.text}</p>}
+      {typeof props.text === "string" && <p dangerouslySetInnerHTML={{__html: props.text}}></p>}
       {typeof props.text === "object" && (
         <ul>
           {props.text.map((item: any, i: number) => (

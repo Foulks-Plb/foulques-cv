@@ -11,7 +11,7 @@ export default function Exp(props: any) {
         <div className={style.dividerLeft}></div>
         <div className="ml-6">
           <h4 className="mb-1 mt-2">{props.title}</h4>
-          <p>{props.text}</p>
+          <p className={style.text} dangerouslySetInnerHTML={{ __html: props.text }}></p>
         </div>
       </div>
     </div>

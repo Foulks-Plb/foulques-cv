@@ -8,7 +8,7 @@
   "tab": {
     "profil": {
       "title": "Profile",
-      "text": "With 5 years of experience in full stack and blockchain development, I am a passionate and determined developer. My goal is to continue learning and excelling in the field of blockchain, in order to actively contribute to this rapidly expanding ecosystem."
+      "text": "With <strong>5 years</strong> of experience in full stack and blockchain development, I am a passionate and determined developer. My goal is to continue learning and excelling in the field of blockchain, in order to actively contribute to this rapidly expanding ecosystem."
     },
     "lang": {
       "title": "Languages",
@@ -59,7 +59,7 @@
           "icon": "medium"
         },
         {
-          "name": "Twitter",
+          "name": "X",
           "link": "https://twitter.com/FoulkPlb",
           "icon": "twitter"
         }
@@ -71,39 +71,17 @@
       "title": "Technical Skills",
       "subtitle": "Programming Languages",
       "text": [
-        [
-          "JavaScript",
-          "TypeScript",
-          "React/Next.js",
-          "Angular",
-          "HTML/CSS",
-          "Tailwind",
-          "Bootstrap"
-        ],
-        [
-          "NestJs",
-          "SQL/NOSQL",
-          "Sequelize",
-          "TypeORM",
-          "Prisma",
-          "GraphQL",
-          "Redis",
-          "Docker"
-        ],
+        ["TypeScript", "React/Next.js", "Tailwind", "Angular", "Bootstrap"],
         [
           "Solidity",
           "Rust",
           "Circom",
           "Noir-lang",
           "Hardhat/Forge",
-          "Ethers.js/Wagmi",
           "Subgraph"
         ],
-        [
-          "Grafana",
-          "Elasticsearch",
-          "AWS"
-        ]
+        ["NestJs", "Database", "ORM", "Sequelize", "Prisma", "GraphQL"],
+        ["Docker", "AWS", "Grafana", "Elasticsearch", "Redis"]
       ]
     },
     "experiences": {
@@ -113,19 +91,24 @@
           "title": "Lead Blockchain Developer",
           "company": "Onbrane",
           "date": "2023 - Present",
-          "text": "I develop a decentralized financial application EVM, using cryptographic techniques such as ZKP and homomorphic encryption to ensure the privacy of debt products."
+          "text": "I develop a decentralized financial application EVM for a financial company that has seen  <strong>€5 trillion +</strong> exchanged, using cryptographic techniques such as <strong>ZKP</strong> and <strong>homomorphic encryption</strong> to ensure the privacy of debt products."
+        },
+        {
+          "title": "Blockchain Developer",
+          "company": "Freelance",
+          "text": "I developed protocols on <strong>Uniswap V4</strong> and created financial applications reaching <strong>$500K+</strong> in TVL"
         },
         {
           "title": "Full Stack & Blockchain Developer",
           "company": "Hexalabs",
           "date": "2022 - 2023",
-          "text": "I developed frontends with React.js and Next.js, deployed blockchain projects in Solidity (DeFi, NFT Marketplace, etc.), and configured backends."
+          "text": "I developed frontends with React.js and Next.js, deployed blockchain projects in Solidity (<strong>DeFi, NFT Marketplace,</strong> etc.), and built backends."
         },
         {
           "title": "Full Stack Developer",
           "company": "Toys films",
           "date": "2020 - 2022",
-          "text": "With Angular and various node.js frameworks, I designed innovative solutions for major clients such as L'Oréal, Microsoft, and Air Liquide."
+          "text": "With Angular and various node.js frameworks, I designed innovative solutions for major clients such as <strong>L'Oréal, Microsoft,</strong> and <strong>Air Liquide</strong>."
         }
       ]
     },
@@ -133,10 +116,10 @@
       "title": "Education",
       "exp": [
         {
-          "title": "Bachelor's in Real-time 3D",
-          "company": "Hetic",
+          "title": "Computer science bachelor",
+          "company": "Hetic university",
           "date": "2017 - 2020",
-          "text": "Training focused on real-time 3D content creation, covering applied mathematics and web development."
+          "text": "Training focused on real-time 3D content creation, covering <strong>applied mathematics</strong> and <strong>web development</strong>."
         }
       ]
     }
