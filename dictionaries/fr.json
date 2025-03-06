@@ -88,27 +88,27 @@
       "title": "Expériences",
       "exp": [
         {
-          "title": "Lead Développeur Blockchain",
-          "company": "Onbrane",
-          "date": "2023 - Présent",
-          "text": "Je développe une application financière décentralisée EVM pour une entreprise financière qui compte <strong>+5 billions €</strong> échangés, en utilisant de la cryptographie telles que <strong>ZKP</strong> et le <strong>chiffrement homomorphe</strong> pour garantir la confidentialité des produits de dette."
+          "title": "Développeur Blockchain",
+          "company": "Morpho",
+          "date": "2024 - Present",
+          "text": "Je me concentre sur le développement et l’optimisation des futures versions de la plateforme, en exploitant des technologies basées sur <strong>JavaScript</strong> pour améliorer la scalabilité, les performances et l’intégration fluide."
         },
         {
-          "title": "Développeur Blockchain",
-          "company": "Freelance",
-          "text": "J'ai développé des protocoles sur <strong>Uniswap V4</strong> et créé des applications financières avec <strong>+500K $</strong> en TVL."
+          "title": "Lead Développeur Blockchain",
+          "company": "Onbrane",
+          "date": "2023 - 2024",
+          "text": "J'ai développé une application financière décentralisée EVM pour une entreprise financière qui compte <strong>+5 billions €</strong> échangés, en utilisant de la cryptographie telles que <strong>ZKP</strong> et le <strong>chiffrement homomorphe</strong> pour garantir la confidentialité des produits de dette."
         },
         {
           "title": "Développeur Full Stack & Blockchain",
           "company": "Hexalabs",
           "date": "2022 - 2023",
-          "text": "J'ai développé des interfaces avec React.js et Next.js, déployé des projets blockchain en Solidity (<strong>DeFi, Marketplace NFT,</strong> etc.), et développé des backends."
+          "text": "J'ai développé des interfaces Next.js, déployé des projets blockchain en Solidity (<strong>DeFi, Marketplace NFT,</strong> etc.), et développé des backends."
         },
         {
           "title": "Développeur Full Stack",
           "company": "Toys films",
-          "date": "2020 - 2022",
-          "text": "Avec Angular et divers frameworks node.js, j'ai conçu des solutions innovantes pour des clients tels que <strong>L'Oréal, Microsoft,</strong> et <strong>Air Liquide</strong>."
+          "date": "2020 - 2022"
         }
       ]
     },

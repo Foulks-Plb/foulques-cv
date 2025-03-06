@@ -88,27 +88,27 @@
       "title": "Experiences",
       "exp": [
         {
-          "title": "Lead Blockchain Developer",
-          "company": "Onbrane",
-          "date": "2023 - Present",
-          "text": "I develop a decentralized financial application EVM for a financial company that has seen  <strong>€5 trillion +</strong> exchanged, using cryptographic techniques such as <strong>ZKP</strong> and <strong>homomorphic encryption</strong> to ensure the privacy of debt products."
+          "title": "Blockchain Developer",
+          "company": "Morpho",
+          "date": "2024 - Present",
+          "text": "I focus on developing and optimizing future versions of the platform, leveraging (<strong>JavaScript-driven technologies</strong>  to enhance scalability, performance, and seamless integration."
         },
         {
-          "title": "Blockchain Developer",
-          "company": "Freelance",
-          "text": "I developed protocols on <strong>Uniswap V4</strong> and created financial applications reaching <strong>$500K+</strong> in TVL"
+          "title": "Lead Blockchain Developer",
+          "company": "Onbrane",
+          "date": "2023 - 2024",
+          "text": "I developed a decentralized financial application EVM for a financial company that has seen  <strong>€5 trillion +</strong> exchanged, using cryptographic techniques such as <strong>ZKP</strong> and <strong>homomorphic encryption</strong> to ensure the privacy of debt products."
         },
         {
           "title": "Full Stack & Blockchain Developer",
           "company": "Hexalabs",
           "date": "2022 - 2023",
-          "text": "I developed frontends with React.js and Next.js, deployed blockchain projects in Solidity (<strong>DeFi, NFT Marketplace,</strong> etc.), and built backends."
+          "text": "I developed frontends with Next.js, deployed blockchain projects in Solidity (<strong>DeFi, NFT Marketplace,</strong> etc.), and built backends."
         },
         {
           "title": "Full Stack Developer",
           "company": "Toys films",
-          "date": "2020 - 2022",
-          "text": "With Angular and various node.js frameworks, I designed innovative solutions for major clients such as <strong>L'Oréal, Microsoft,</strong> and <strong>Air Liquide</strong>."
+          "date": "2020 - 2022"
         }
       ]
     },
